@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+  #root {
+    @apply flex flex-col;
+  }
+  .aligen-content {
+    @apply max-w-6xl w-full mx-auto
+  }
+}
+
+.auth-bg{
+  @apply bg-[url('https://picsum.photos/1000/1200')] bg-center bg-cover bg-no-repeat
+}
+
+.auth-left {
+  @apply auth-bg  bg-no-repeat lg:block md:hidden;
+}
+
+.auth-right{
+  @apply auth-bg lg:bg-none grid place-content-center min-h-screen;
+}
+
+.auth-continer{
+  @apply grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen
+}
